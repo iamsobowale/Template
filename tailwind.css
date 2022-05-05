@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .bg-primary {
+        background-color: #171717;
+        
+    }
+    .bg-button {
+        background-color: black;
+    }
+    .main-font {
+        color: white;
+    }
+    .bg-section-two {
+        background-color: #3f3f46;
+    }
+    .bg-test {
+        background: black;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .mouse_scroll {
+        display: block;
+    }
+    
+    .one{
+        margin-top: 1px;
+    }
+    
+    .one, .two, .three {
+        -webkit-animation: mouse-scroll 1s infinite;
+        -moz-animation: mouse-scroll 1s infinite;
+        animation: mouse-scroll 1s infinite;
+        
+    }
+
+    .one {
+        -webkit-animation-delay: .1s;
+        -moz-animation-delay: .1s;
+        -webkit-animation-direction: alternate;
+        
+        animation-direction: alternate;
+        animation-delay: alternate;
+    }
+    
+    .two {
+        -webkit-animation-delay: .2s;
+        -moz-animation-delay: .2s;
+        -webkit-animation-direction: alternate;
+        
+        animation-delay: .2s;
+        animation-direction: alternate;
+        
+        margin-top: -6px;
+    }
+    
+    .three {
+        -webkit-animation-delay: .3s;
+        -moz-animation-delay: .3s;
+        -webkit-animation-direction: alternate;
+        
+        animation-delay: .3s;
+        animation-direction: alternate;
+        
+        margin-top: -6px;
+    }
+
+    @-webkit-keyframes mouse-scroll {
+        0%   { opacity: 0;}
+        50%  { opacity: .5;}
+        100% { opacity: 1;}
+    }
+    @-moz-keyframes mouse-scroll {
+        0%   { opacity: 0; }
+        50%  { opacity: .5; }
+        100% { opacity: 1; }
+    }
+    @-o-keyframes mouse-scroll {
+        0%   { opacity: 0; }
+        50%  { opacity: .5; }
+        100% { opacity: 1; }
+    }
+    @keyframes mouse-scroll {
+        0%   { opacity: 0; }
+        50%  { opacity: .5; }
+        100% { opacity: 1; }
+    }
+
+
+}
